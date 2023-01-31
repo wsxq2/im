@@ -1,0 +1,6 @@
+[submodule "config/wubi"]
+	path = config/wubi
+	url = https://github.com/rime/rime-wubi.git
+[submodule "config/pinyin"]
+	path = config/pinyin
+	url = https://github.com/rime/rime-pinyin-simp.git

@@ -1,0 +1,12 @@
+# custom for windows
+# encoding: utf-8
+patch:
+  #style/horizontal: true    # 横向排列候选
+  app_options/nvim-qt.exe/ascii_mode: true
+  app_options/nvim-qt.exe/vim_mode: true
+  app_options/code.exe/ascii_mode: true
+  app_options/code.exe/vim_mode: true
+  app_options/putty.exe/ascii_mode: true
+  app_options/putty.exe/vim_mode: true
+  app_options/mintty.exe/ascii_mode: true
+  app_options/mintty.exe/vim_mode: true

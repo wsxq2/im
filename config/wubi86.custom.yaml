@@ -1,0 +1,51 @@
+patch:
+  switches/@0:
+    name: ascii_mode
+    states: [中文, 西文]
+  #translator/enable_completion: true               # 是否显示编码未输入完整的词条
+# translator/enable_sentence: false
+#speller/max_code_length: 4
+#speller/auto_select: true
+#speller/auto_select_unique_candidate: true
+  engine/translators/+:
+    - lua_translator@date_translator # 自定义系统变量输出
+    - lua_translator@calculator # 计算器：二元运算，coco 开头，如 coco56*34 coco24/1024
+    - table_translator@custom_phrase
+  recognizer/patterns/+:
+    calculator: "^coco.*$" # 计算器
+
+  key_binder/bindings:
+    - { when: has_menu, accept: semicolon, send: 2 }
+    - { when: has_menu, accept: apostrophe, send: 3 }
+
+  #menu/page_size: 7
+
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    #enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+
+  'punctuator/half_shape/\': 、
+  'punctuator/half_shape/#': '#'
+  #'punctuator/half_shape/$': '$'
+  #'punctuator/half_shape/%': '%'
+  'punctuator/symbols/+':
+    '/xk': ["😂", "🤣"] #笑哭
+    '/kx': [ '😇', '😁', '😀', '😊', '^_^', ':-)'] #开心
+    '/kn': ['>_<'] #苦恼
+    '/gg': ['-_-', '😅'] #尴尬
+    '/pb': ['=_='] #疲惫
+    '/xh': ['😍', '🥰', '😘'] #喜欢
+    '/ts': ['😛', '😝', '😜'] #吐舌
+    '/xu': ['🤫'] #嘘
+    '/dy': ['😏'] #得意
+    '/sj': ['😪', '😴'] #睡觉
+    '/bs': ['😷', '🤮'] #不适
+    '/ku': ['😎'] #酷
+    '/dk': ['😭'] #大哭
+    '/kp': ['😱'] #可怕
+    '/wy': ['😓'] #无语
+
