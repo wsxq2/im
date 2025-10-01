@@ -50,7 +50,7 @@ sudo apt install ibus-rime
 make linux
 ```
 
-然后在设置中添加该输入法：Settings - Region & Language - Input Sources - 加号 - 搜索 Chinese(Rime) 并添加，然后使用`<Win+Space>`快捷键切换到该输入法。
+然后在设置中添加该输入法：Settings - Keyboard - Input Sources - 加号 - 搜索 Chinese(Rime) 并添加，然后使用`<Win+Space>`快捷键切换到该输入法。
 
 如果没有桌面但需要通过 X11 打开 GUI 应用输入中文，则可以使用以下命令配置并启动输入法：
 
