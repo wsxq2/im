@@ -12,6 +12,7 @@ ANDROID_FILES = $(wildcard android/*)
 WINDOWS_FILES := $(wildcard windows/*)
 
 CP=cp
+SHELL := /bin/bash
 
 common:
 	git submodule update --init
