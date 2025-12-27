@@ -2,11 +2,11 @@ patch:
   switches/@0:
     name: ascii_mode
     states: [中文, 西文]
-  #translator/enable_completion: true               # 是否显示编码未输入完整的词条
-# translator/enable_sentence: false
-#speller/max_code_length: 4
-#speller/auto_select: true
-#speller/auto_select_unique_candidate: true
+  translator/enable_completion: false #  提前顯示尚未輸入完整碼的字〔僅table_translator有效〕
+  translator/enable_sentence: false # 是否開啓自動造句
+  translator/enable_user_dict: false # 是否開啓用戶詞典〔用戶詞典記錄動態字詞頻、用戶詞〕
+  speller/max_code_length: 4  # 形碼最大碼長，超過則頂字上屛〔number〕
+  speller/auto_select: true # 自動上屛, 等价于原本的 auto_select_unique_candidate，详见 <https://github.com/rime/home/issues/362#issuecomment-487254079>
   engine/translators/+:
     - lua_translator@date_translator # 自定义系统变量输出
     - lua_translator@calculator # 计算器：二元运算，coco 开头，如 coco56*34 coco24/1024
@@ -28,10 +28,16 @@ patch:
     enable_sentence: false
     initial_quality: 1
 
-  'punctuator/half_shape/\': 、
-  'punctuator/half_shape/#': '#'
-  #'punctuator/half_shape/$': '$'
-  #'punctuator/half_shape/%': '%'
+  punctuator/half_shape:
+      '\': 、
+      '#': '#'
+      '/': '÷'
+      '*': '×'
+      '=': '='
+      '<': '《'
+      '>': '》'
+      # '$': '$'
+      # '%': '%'
   'punctuator/symbols/+':
     '/xk': ["😂", "🤣"] #笑哭
     '/kx': [ '😇', '😁', '😀', '😊', '^_^', ':-)'] #开心
