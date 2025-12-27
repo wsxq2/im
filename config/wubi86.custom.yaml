@@ -60,9 +60,8 @@ patch:
     '/qqyx': wsxq2@qq.com
     '/ggyx': wsxq222222@gmail.com
     '/qqh': 2667184828
-    # Here, the letter name is used as the code of the Greek letter, and you can replace it with your favorite code as needed.
-    # For example, if you want to use a as the alpha code
-    # just replace the alpha below with a
+
+    # The following is from https://wiki.archlinux.org/title/Rime
     "/alpha": ["Α", "α"]
     "/beta": ["Β", "β"]
     "/gamma": ["Γ", "γ"]
@@ -109,3 +108,7 @@ patch:
 # refer to:
   # 1. https://raw.githubusercontent.com/rime/rime-wubi/refs/heads/master/wubi86.dict.yaml
   # 2. https://github.com/rime/librime/blob/master/data/minimal/symbols.yaml
+
+# for more customizations, please refer to:
+  # 1. https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
+  # 2. https://github.com/rime/home/wiki/CustomizationGuide
