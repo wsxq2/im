@@ -17,11 +17,3 @@
 # 出現在以下這行註釋之後的 # 不再識別爲註釋：
 # no comment
 
-西彭	sgfk	1000	
-西电	sgjn	1000	
-17815162858	sjh	1000	
-wsxq2@qq.com	qqyx	1000	
-wsxq222222@gmail.com	ggyx	1000	
-2667184828	qqhm		
-西安电子科技大学	xdqc		
-计算机科学与技术	dxzy		

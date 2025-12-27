@@ -31,14 +31,14 @@ patch:
   punctuator/half_shape:
       '\': 、
       '#': '#'
-      '/': '÷'
-      '*': '×'
       '=': '='
       '<': '《'
       '>': '》'
       # '$': '$'
       # '%': '%'
-  'punctuator/symbols/+':
+  # preset symbols refer to https://github.com/rime/librime/blob/master/data/minimal/symbols.yaml
+  'punctuator/symbols/+' :
+    # Emoji shortcuts
     '/xk': ["😂", "🤣"] #笑哭
     '/kx': [ '😇', '😁', '😀', '😊', '^_^', ':-)'] #开心
     '/kn': ['>_<'] #苦恼
@@ -54,4 +54,37 @@ patch:
     '/dk': ['😭'] #大哭
     '/kp': ['😱'] #可怕
     '/wy': ['😓'] #无语
+    '/ss': ['👍', '👌', '✌️'] #手势
+    # custom shortcuts
+    '/sjh': 17815162858
+    '/qqyx': wsxq2@qq.com
+    '/ggyx': wsxq222222@gmail.com
+    '/qqh': 2667184828
+    # Here, the letter name is used as the code of the Greek letter, and you can replace it with your favorite code as needed.
+    # For example, if you want to use a as the alpha code
+    # just replace the alpha below with a
+    "/alpha": ["Α", "α"]
+    "/beta": ["Β", "β"]
+    "/gamma": ["Γ", "γ"]
+    "/delta": ["Δ", "δ"]
+    "/epsilon": ["Ε", "ε"]
+    "/zeta": ["Ζ", "ζ"]
+    "/eta": ["Η", "η"]
+    "/theta": ["Θ", "θ"]
+    "/iota": ["Ι", "ι"]
+    "/kappa": ["Κ", "κ"]
+    "/lambda": ["Λ", "λ"]
+    "/mu": ["Μ", "μ"]
+    "/nu": ["Ν", "ν"]
+    "/xi": ["Ξ", "ξ"]
+    "/omicron": ["Ο", "ο"]
+    "/pi": ["Π", "π"]
+    "/rho": ["Ρ","ρ"]
+    "/sigma": ["Σ", "σ", "ς"]
+    "/tau": ["Τ", "τ"]
+    "/upsilon": ["Υ", "υ"]
+    "/phi": ["Φ", "φ"]
+    "/chi": ["Χ", "χ"]
+    "/psi": ["Ψ", "ψ"]
+    "/omega": ["Ω", "ω"]
 
