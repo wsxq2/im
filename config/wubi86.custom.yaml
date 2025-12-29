@@ -34,6 +34,7 @@ patch:
       '=': '='
       '<': '《'
       '>': '》'
+      '|': '|'
       # '$': '$'
       # '%': '%'
   # preset symbols refer to https://github.com/rime/librime/blob/master/data/minimal/symbols.yaml
