@@ -14,9 +14,12 @@ patch:
   recognizer/patterns/+:
     calculator: "^coco.*$" # 计算器
 
-  key_binder/bindings:
-    - { when: has_menu, accept: semicolon, send: 2 }
-    - { when: has_menu, accept: apostrophe, send: 3 }
+  key_binder:
+    bindings:
+      - { when: has_menu, accept: semicolon, send: 2 }
+      - { when: has_menu, accept: apostrophe, send: 3  }
+      - {accept: minus, send: Page_Up, when: has_menu}
+      - {accept: equal, send: Page_Down, when: has_menu}
 
   #menu/page_size: 7
 
