@@ -3,5 +3,5 @@ patch:
     - {schema: wubi86}
   ascii_composer/switch_key/Shift_L: commit_code
   ascii_composer/switch_key/Shift_R: commit_code
-  "switcher/hotkeys":  # 這個列表裏每項定義一個快捷鍵，使哪個都中
-    - "Control+backslash"  # Ctrl+\
+  "switcher/hotkeys":  # about key name refer to <https://github.com/rime/librime/blob/master/include/X11/keysymdef.h>, remove XK_
+    - "Control+F12"  # Ctrl+\
