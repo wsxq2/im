@@ -59,10 +59,13 @@ patch:
     '/kp': ['😱'] #可怕
     '/wy': ['😓'] #无语
     '/ss': ['👍', '👌', '✌️'] #手势
+    '/dz': '👍'
+    '/ok': '👌'
+    '/yw': ['❓']
     # custom shortcuts
     '/sjh': 17815162858
-    '/qqyx': wsxq2@qq.com
-    '/ggyx': wsxq222222@gmail.com
+    '/qm': wsxq2@qq.com
+    '/gm': wsxq222222@gmail.com
     '/qqh': 2667184828
 
     # The following is from https://wiki.archlinux.org/title/Rime
